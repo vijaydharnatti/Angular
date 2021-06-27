@@ -1,0 +1,35 @@
+<div class="container"> </div>
+<nav class="navbar navbar-default">
+  <ul class="navbar navbar-nav">
+    <li>
+      <a routerLink=''>create</a>
+    </li>
+   
+  </ul>
+
+  <div>
+
+  </div>
+  <div>
+    <table class="table table-striped" >
+      <thead>
+        <tr>
+          <th>EmployeeId</th>
+          <th>EmployeeName</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let item of EmpDetails">
+        <tr>
+          <th>{{item.employeeDetailsID}}</th>
+          <th>{{item.employeeName}}</th>
+          <th>{{item.salary}}</th>
+        </tr>
+      </tbody>
+
+    </table>
+
+  </div>
+
+</nav>
+
